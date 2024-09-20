@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <!--    <string-array name="lista_questoes">-->
+    <!--        <item>Questão 1 de 5</item>-->
+    <!--        <item>Questão 2 de 5</item>-->
+    <!--        <item>Questão 3 de 5</item>-->
+    <!--        <item>Questão 4 de 5</item>-->
+    <!--        <item>Questão 5 de 5</item>-->
+    <!--    </string-array>-->
+
+    <string name="lista_questoes">Questão 1 de 5</string>
+
+    <string name="pergunta_principal">Qual o significado dessa placa?</string>
+
+</resources>

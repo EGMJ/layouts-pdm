@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transito">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="8dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Logo no Top Bar -->
+                <ImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/logo_transito" />
+
+                <!-- Título no Top Bar -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Quiz de transito"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_questoes"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/Placa"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="Imagem de cabeçalho"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_transito" />
+
+        <TextView
+            android:id="@+id/txtPergunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pergunta_principal"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000000"
+                android:text="De a Preferencia"
+                android:onClick="TrocarConteudo"
+                android:textColor="@color/white"/>
+                
+            <Button
+                android:id="@+id/btnOpc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Em frente ou a direita"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000000"
+                android:onClick="TrocarConteudo"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnOpc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pare"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000000"
+                android:onClick="TrocarConteudo"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnOpc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animal na pista"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000000"
+                android:onClick="TrocarConteudo"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnProxima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#474747"
+                android:text="Proxima Pergunta"
+                android:onClick="TrocarConteudo"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#474747"
+                android:text="Voltar para Menu"
+                android:textColor="@android:color/white"
+                android:onClick="Voltar"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

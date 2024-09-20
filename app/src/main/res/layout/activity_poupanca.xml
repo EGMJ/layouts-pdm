@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Poupanca">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo_porquinho"
+                    android:contentDescription="Logo"/>
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App de Poupança"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cabecalho_porquinho"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagem de cabeçalho"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textValorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Inicial:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/inputValorInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Valor em R$. Ex: R$ 1700,00" />
+
+        <TextView
+            android:id="@+id/textAplicacaoMensal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplicação Mensal:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/inputAplicacaoMensal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Insira o valor da aplicação mensal" />
+
+        <TextView
+            android:id="@+id/textTempoAplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo de Aplicação:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/inputTempoAplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Tempo de aplicação em meses" />
+
+        <TextView
+            android:id="@+id/textTaxa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxa (% ao ano):"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/inputTaxa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Ex: 14%" />
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="24dp"
+            android:onClick="Voltar"
+            android:background="?attr/colorPrimary"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
